@@ -6,6 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--JavaScript-->
     <script type="text/javascript" src="portfoliofixed.js"></script>
+    <!--Animate.css-->
+    <link rel="stylesheet" href="lib/animate.css">
     <!--Handlebars-->
     <script src="lib/handlebars-v4.0.11.js"></script>
     <!--Bootstrap (MaxCDN's CDN supported version)-->
@@ -18,12 +20,11 @@
 
 <body>
     <!--Background Image-->
-<!--     <div class ="background"> -->
-<!--         <img src="img/Background.jpg"> -->
-<!--     </div> -->
+    <div class ="background">
+    </div>
 
     <!--Navigation Bar-->
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -31,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <div class="name">ALEXISCHINA</div>
+            <div class="name">ALEXISCHINA<a href="index.html"></div>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -44,10 +45,11 @@
         </div>
     </nav>
 
+    <!--Back to Content button-->
+
     <!--Populated Content-->
     <div id="product-detail-container"></div>
     <div id="product-selection-container"></div>
-
 
     <script id="selection-template" type="text/x-handlebars-template">
         {{#each chosenProject}}
@@ -58,14 +60,19 @@
     </script>
 
     <script id="detail-template" type="text/x-handlebars-template">
-        <div class="name">
-            <h1>{{ name }}</h1>
+        <div class="col-sm-6">
+            <div class="image1">
+                <img src={{ img }}>
+            </div>
         </div>
-        <div class="image1">
-            <img src={{ img }}>
-        </div>
-        <div class="description">
-            <p>{{ description }}</p>
+
+        <div class="col-sm-6">
+            <div class="title">
+                <h1>{{ name }}</h1>
+            </div>
+            <div class="description">
+                <p>{{ description }}</p>
+            </div>
         </div>
     </script>
 

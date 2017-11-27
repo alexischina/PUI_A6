@@ -31,9 +31,9 @@ var projects = {
             "id": 3
         },
         {
-            "name": "Plan PickUp",
-            "description": "PLAN PICKUP DESCRIPTION",
-            "img": "img/planpickup.jpg",
+            "name": "CUI",
+            "description": "CUI DESCRIPTION",
+            "img": "img/CUI.jpg",
             "id": 4
         },
         {
@@ -76,7 +76,5 @@ function updateProductDetail(id) {
     // add the new HTML to the page
     $("#product-detail-container").html(newHTML);
 }
-
-
 
 });

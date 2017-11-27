@@ -1,17 +1,19 @@
 /* set position for background image */
 .background {
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
     z-index: 0;
 }
 
 /*changing positioning of background depending on screen size*/
-@media screen and (max-width: 415px) {
+/*@media screen and (max-width: 415px) {
     .background {
     position: fixed;
     }
-}
+}*/
 
 /*styling of links in nav bar*/
 a {
@@ -27,7 +29,7 @@ a {
     top: 10px;
 }
 
-/* styling for collapsed nav bar icon */
+/* Hamburger menu icon */
 .navbar .navbar-toggle .icon-bar {
     background-color: black;
 }
@@ -36,6 +38,11 @@ a {
 .navbar {
     border-color: transparent;
     background-color: transparent;
+}
+
+/* Dropdown items from hamburger menu */
+.navbar-right {
+    text-align: right;
 }
 
 /* styling for hovered over selection */
@@ -52,7 +59,7 @@ font-weight: bolder;
 
 /* Styling for active selection */
 .navbar .navbar-nav > li > a:active, .navbar .navbar-nav > li > a:focus {
-color: gray;
+color: black;
 background-color: transparent;
 font-weight: bolder;
 }
@@ -71,7 +78,7 @@ font-weight: bolder;
     padding-left: 38%;
     font-family: "Gill Sans";
     font-weight: lighter;
-    font-size: 140%;
+    font-size: 1em;
     position: fixed;
     color: #4a4a4a;
 }
@@ -82,7 +89,11 @@ font-weight: bolder;
 
 /* styling for email icon */
 #email {
-    zoom: 1.2%;
+    zoom: 2%;
+}
+
+#contact-text {
+    font-size: 30px;
 }
 
 /*.me-container {
@@ -106,6 +117,8 @@ font-weight: bolder;
     font-size: 150%;
     margin-top: 200px;
 }
+
+
 
 /* animations for circles when hovering over navbar elements */
 .container-fluid a:before, div.circleBehind a:after
@@ -233,7 +246,10 @@ nav {
 }
 
 .title {
-    margin-top: 10%;
+    margin-top: 20%;
+    text-align: left;
+    padding-right: 530%;
+    font-family: "Gill Sans";
 }
 
 .portfolio-item {
@@ -246,13 +262,13 @@ nav {
 
 .image1 {
     zoom: 60%;
+    padding-top: 20%;
 }
 
 h1 {
-    margin-left: 50%;
     margin-top: 10%;
 }
 
-#description {
-margin-left: 50%;
+.description {
+    font-family: "Gill S;
 }
