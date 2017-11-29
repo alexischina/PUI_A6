@@ -38,6 +38,7 @@ a {
 .navbar {
     border-color: transparent;
     background-color: transparent;
+    z-index: 50;
 }
 
 /* Dropdown items from hamburger menu */
@@ -71,6 +72,10 @@ font-weight: bolder;
     color: black;
     padding-left: 10px;
     padding-top: 10px;
+}
+
+.name a {
+  text-decoration: none;
 }
 
 .contact-container {
@@ -118,8 +123,6 @@ font-weight: bolder;
     margin-top: 200px;
 }
 
-
-
 /* animations for circles when hovering over navbar elements */
 .container-fluid a:before, div.circleBehind a:after
 {
@@ -152,12 +155,6 @@ font-weight: bolder;
 .container-fluid a:hover:after {
     opacity: 1;
     transform: translateX(-50%) translateY(-50%) scale(1.3);
-}
-
-.row {
-    position: absolute;
-    top: 20%;
-    margin-right: 4%;
 }
 
 .hovereffect {
@@ -261,7 +258,7 @@ nav {
 }
 
 .image1 {
-    zoom: 60%;
+    zoom: 30%;
     padding-top: 20%;
 }
 
@@ -270,5 +267,10 @@ h1 {
 }
 
 .description {
-    font-family: "Gill S;
+    font-family: "Gill Sans";
+}
+
+#back {
+    z-index: 1000;
+    position: absolute;
 }
