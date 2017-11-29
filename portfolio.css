@@ -1,6 +1,6 @@
 /* set position for background image */
 .background {
-    background-image: url('img/background.jpg');
+    background-image: url('img/Background.jpg');
     background-size: cover;
     height: 300vh;
     width: 100vw;
